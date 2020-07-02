@@ -129,7 +129,6 @@ def auto_backup_files(target_files, lock_intervals):
 
         time.sleep(lock_intervals[0].total_seconds())
 
-test_FILE = "/Users/jeffreyburggraf/PycharmProjects/Misc/FileBackerUpper/test/omg.txt"
-
-
-auto_backup_files([test_FILE], (datetime.timedelta(seconds=10), datetime.timedelta(minutes=1), datetime.timedelta(minutes=10)))
+if __name__ == "__main__":
+    test_FILE = "/Users/jeffreyburggraf/PycharmProjects/Misc/FileBackerUpper/test/omg.txt"
+    auto_backup_files([test_FILE], (datetime.timedelta(seconds=10), datetime.timedelta(minutes=1), datetime.timedelta(minutes=10)))
